@@ -5,6 +5,11 @@
 	후행: User.java
 	
 	로그인만 스프링시큐리티가 관리해줌
+	
+	로그인 규칙 3가지 (로그인만 스프링시큐리티가 관리해줌)
+		1.username, password 키 값은 변경 불가능 
+		2.method: post방식으로만 전송
+		3.MIME타입: x-www-form-urlEncoded만 가능 
  -->
  
 <!DOCTYPE html>
@@ -16,10 +21,7 @@
 	<body>
 		<h1>loginForm 페이지입니다.</h1>
 		<hr />
-		<!-- 주의사항 3가지 (로그인만 스프링시큐리티가 관리해줌)
-			1.username, password 키 값은 변경 불가능 
-			2.method: post방식으로만 전송
-			3.MIME타입; x-www-form-urlEncoded만 가능  
+		<!--  
 		-->
 		<form action="/loginProc" method="post">
 			<input type="text" name="username" /> 
