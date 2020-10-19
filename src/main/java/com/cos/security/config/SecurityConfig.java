@@ -20,7 +20,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @EnableWebSecurity // 시큐리티 설정파일 활성화(기록)
-@Configuration// IoC 등록
+@Configuration// IoC 등록(설정 파일 메모리에 띄움)
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	// 싱글톤 방식으로 암호화
@@ -49,6 +49,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 			.and()
 			.logout()
 			.logoutSuccessUrl("/logoutProc")
-			; //
+			; 
 	}
 }

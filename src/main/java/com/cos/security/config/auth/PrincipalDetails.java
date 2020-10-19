@@ -2,7 +2,9 @@ package com.cos.security.config.auth;
 /*
  * 2020.10.19-9
  * 선행: PrincipalDetailsService.jave
- * 후행: 
+ * 후행: 없음
+ *
+ * 여기까지: 회원가입, 로그인, 권한부여 완료됨
  * 
  */
 
